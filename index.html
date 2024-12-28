@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>王惠宇</title>
+	<link rel="shortcut icon" href="favicon.ico">
+    <style>
+        /* 清除浏览器默认样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* 整体页面布局容器 */
+        body {
+            display: flex;
+            min-height: 100vh;
+            font-family: Arial, sans-serif; /* 设置字体，让整体更清新 */
+            background-color: #fff; /* 页面整体背景色为白色 */
+            animation: fadeIn 1s ease-in-out; /* 添加开场动画，使用 fadeIn 动画，持续 1 秒，缓入缓出效果 */
+            overflow: hidden; /* 防止出现滚轮 */
+        }
+
+        /* 定义开场动画 */
+        @keyframes fadeIn {
+            from {
+                opacity: 0; /* 开始时完全透明 */
+            }
+            to {
+                opacity: 1; /* 结束时完全不透明 */
+            }
+        }
+
+        /* 左边导航栏样式 */
+      .nav {
+            width: 20%;
+            min-width: 150px;
+            background-color: #fff; /* 导航栏背景色为白色 */
+            border-radius: 30px; /* 设置圆角 */
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* 添加更明显的阴影效果，增强层次感 */
+            padding: 20px;
+            margin: 20px; /* 和页面边缘及右边内容区域保持一定间距 */
+            display: flex; /* 使用 flex 布局，方便内部元素排列 */
+            flex-direction: column; /* 内部元素垂直排列 */
+            align-items: center; /* 内部元素水平居中 */
+            transition: all 0.3s ease; /* 为导航栏添加过渡效果 */
+        }
+
+        /* 导航栏中的头像样式 */
+      .nav img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%; /* 设置为圆形头像 */
+            margin-bottom: 10px; /* 与名字之间添加一点间距 */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* 为头像添加阴影效果 */
+            transition: all 0.3s ease; /* 为头像添加过渡效果 */
+        }
+
+        /* 导航栏中的名字样式 */
+      .nav h3 {
+            color: #333; /* 名字的颜色为深灰色 */
+            margin: 0; /* 去除默认外边距 */
+            font-size: 18px; /* 名字的字体大小 */
+            transition: all 0.3s ease; /* 为名字添加过渡效果 */
+        }
+
+        /* 导航栏中的链接样式，这里简单示例，可按需优化 */
+      .nav a {
+            display: block;
+            color: #333; /* 链接文字颜色为深灰色，更清新协调 */
+            text-decoration: none;
+            padding: 10px 0;
+            border-bottom: 1px solid #eee; /* 添加底部浅色分割线 */
+            transition: all 0.3s ease; /* 添加过渡效果，鼠标悬停更平滑 */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* 初始状态下的阴影效果 */
+            border-radius: 5px; /* 为导航栏按钮添加较小的圆角 */
+        }
+
+        /* 导航栏链接鼠标悬停效果 */
+      .nav a:hover {
+            color: #007bff; /* 悬停时文字变蓝色，更醒目 */
+            transform: translateX(5px); /* 稍微向右平移一点，增加交互感 */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 鼠标悬停时的阴影效果，更明显 */
+        }
+
+        /* 当鼠标悬停在导航栏上时的效果 */
+      .nav:hover {
+            transform: scale(1.05); /* 导航栏稍微放大 */
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* 增加导航栏的阴影效果 */
+        }
+
+        /* 右边主要内容区域样式 */
+      .main-content {
+            width: 80%;
+            background-color: #fff; /* 主要内容区域背景色为白色 */
+            border-radius: 30px; /* 设置圆角 */
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* 添加更明显的阴影效果，增强层次感 */
+            padding: 20px;
+            margin: 20px; /* 和页面边缘及左边导航栏保持一定间距 */
+            transition: all 0.3s ease; /* 为主要内容区域添加过渡效果 */
+        }
+
+        /* 当鼠标悬停在右边主要内容区域上时的效果 */
+      .main-content:hover {
+            transform: scale(1.03); /* 主要内容区域稍微放大 */
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* 增加主要内容区域的阴影效果 */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 左边导航栏部分 -->
+    <div class="nav">
+        <img src="avatar.jpg" alt="我的头像"> <!-- 替换为你的头像图片路径 -->
+        <h3>王惠宇</h3> <!-- 替换为你的真实名字 -->
+        <a href="#">首页</a>
+        <a href="#">关于我</a>
+        <a href="#">作品展示</a>
+        <a href="#">联系我</a>
+    </div>
+    <!-- 右边主要内容区域部分 -->
+    <div class="main-content">
+        <h1>欢迎来到我的个人主页</h1>
+        <p>这里是一片清新的小天地，你可以在这里了解到关于我的点点滴滴。无论是我的兴趣爱好，还是过往的经历，都会慢慢呈现给你哦。希望你在这里能有一段愉快的浏览时光呀~</p>
+    </div>
+</body>
+
+</html>
