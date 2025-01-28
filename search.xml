@@ -18,4 +18,106 @@
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
   </entry>
+  <entry>
+    <title>个人图床终极解决方案</title>
+    <url>/2025/01/28/%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A%E7%BB%88%E6%9E%81%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</url>
+    <content><![CDATA[<h1 id="前言：为什么需要自建图床？"><a href="#前言：为什么需要自建图床？" class="headerlink" title="前言：为什么需要自建图床？"></a>前言：为什么需要自建图床？</h1><p>在博客写作中，我们常遇到以下痛点</p>
+<ul>
+<li><p>第三方图床突然关闭（如<a href="https://niupic.com/">牛图网</a>）</p>
+</li>
+<li><p>免费图床存在限制、广告注入风险，甚至会跑路</p>
+</li>
+<li><p>图片管理分散，无法统一维护</p>
+</li>
+<li><p>访问速度不稳定影响阅读体验</p>
+<h1 id="PicGo-图片上传-管理新体验"><a href="#PicGo-图片上传-管理新体验" class="headerlink" title="PicGo 图片上传+管理新体验"></a>PicGo 图片上传+管理新体验</h1></li>
+</ul>
+<h2 id="核心优势"><a href="#核心优势" class="headerlink" title="核心优势"></a>核心优势</h2><ul>
+<li>灵活上传，主窗口支持拖拽、选择图片上传；支持读取剪贴板的第一张图片快捷上传。macOS支持顶部栏拖拽上传。</li>
+<li>自动复制链接，上传成功后自动复制链接地址到剪贴板，支持5种复制粘贴格式，让你的文本编辑极致高效。</li>
+<li>支持插件系统，支持JavaScript开发的插件，给予插件极大自由度，让PicGo更加强大，成为你得手的效率工具。</li>
+</ul>
+<h2 id="推荐自建方案（GitHub-jsDelivr-CDN）"><a href="#推荐自建方案（GitHub-jsDelivr-CDN）" class="headerlink" title="推荐自建方案（GitHub + jsDelivr CDN）"></a>推荐自建方案（GitHub + jsDelivr CDN）</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p>此方案使用Github的仓库，并使用jsDelivr CDN解决Github在国内访问困难的问题。</p>
+<p>并且此方案<strong>完全免费</strong>。</p>
+<h3 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h3><h4 id="建立一个仓库"><a href="#建立一个仓库" class="headerlink" title="建立一个仓库"></a>建立一个仓库</h4><p><img src="https://cdn.jsdelivr.net/gh/hhuuiiyyuu/images/Create%20a%20new%20images%20repository.png" alt="新建图床仓库"></p>
+<p>Public就可以了</p>
+<h4 id="生成Token"><a href="#生成Token" class="headerlink" title="生成Token"></a>生成Token</h4><p>生成<a href="https://github.com/settings/tokens">GitHub Token</a>（需勾选repo权限）</p>
+<p><img src="https://cdn.jsdelivr.net/gh/hhuuiiyyuu/images/Github%20token.png" alt="新建Token"></p>
+<p>将token复制</p>
+<p><img src="https://cdn.jsdelivr.net/gh/hhuuiiyyuu/images/A%20token.png" alt="A token"></p>
+<h4 id="下载PicGo并安装"><a href="#下载PicGo并安装" class="headerlink" title="下载PicGo并安装"></a>下载PicGo并安装</h4><blockquote>
+<h2 id="下载安装（PicGo-is-Here-PicGo）"><a href="#下载安装（PicGo-is-Here-PicGo）" class="headerlink" title="下载安装（PicGo is Here | PicGo）"></a>下载安装（<a href="https://picgo.github.io/PicGo-Doc/zh/guide/#%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85">PicGo is Here | PicGo</a>）</h2><table>
+<thead>
+<tr>
+<th>下载源</th>
+<th>地址&#x2F;安装方式</th>
+<th>平台</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>GitHub Release</td>
+<td><a href="https://github.com/Molunerfinn/PicGo/releases">https://github.com/Molunerfinn/PicGo/releases</a></td>
+<td>All</td>
+<td>国内下载速度可能会慢</td>
+</tr>
+<tr>
+<td><a href="https://cloud.tencent.com/product/cos">腾讯云COS(opens new window)</a></td>
+<td><a href="https://github.com/Molunerfinn/PicGo/releases">https://github.com/Molunerfinn/PicGo/releases</a> 附在更新日志结尾</td>
+<td>All</td>
+<td>感谢 <a href="https://cloud.tencent.com/product/cos">腾讯云COS (opens new window)</a>提供的赞助支持</td>
+</tr>
+<tr>
+<td><a href="https://mirrors.sdu.edu.cn/">山东大学镜像站(opens new window)</a></td>
+<td><a href="https://mirrors.sdu.edu.cn/github-release/Molunerfinn_PicGo">https://mirrors.sdu.edu.cn/github-release/Molunerfinn_PicGo</a></td>
+<td>All</td>
+<td>感谢 <a href="https://mirrors.sdu.edu.cn/">山东大学镜像站 (opens new window)</a>提供的镜像支持</td>
+</tr>
+<tr>
+<td><a href="https://scoop.sh/">Scoop(opens new window)</a></td>
+<td><code>scoop bucket add helbing https://github.com/helbing/scoop-bucket</code> &amp; <code>scoop install picgo</code></td>
+<td>Windows</td>
+<td>感谢 @helbing 的贡献</td>
+</tr>
+<tr>
+<td><a href="https://chocolatey.org/">Chocolatey(opens new window)</a></td>
+<td><code>choco install picgo</code></td>
+<td>Windows</td>
+<td>感谢 @iYato 的贡献</td>
+</tr>
+<tr>
+<td><a href="https://brew.sh/">Homebrew(opens new window)</a></td>
+<td><code>brew install picgo --cask</code></td>
+<td>macOS</td>
+<td>感谢 @womeimingzi11 的贡献</td>
+</tr>
+<tr>
+<td><a href="https://aur.archlinux.org/packages/yay">AUR(opens new window)</a></td>
+<td><code>yay -S picgo-appimage</code></td>
+<td>Arch-Linux</td>
+<td>感谢 @houbaron 的贡献</td>
+</tr>
+</tbody></table>
+</blockquote>
+<p>安装一路确定即可</p>
+<h4 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h4><p><img src="https://cdn.jsdelivr.net/gh/hhuuiiyyuu/images/PicGo%20Github.png" alt="配置"></p>
+<p>上面必填的4个正常填即可</p>
+<p>自定义域名可以这样填</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/你的名字/你的仓库</span><br></pre></td></tr></table></figure>
+
+<p>这时你的PicGo就可以使用了</p>
+<p><strong>优势</strong>：完全免费，全球CDN加速<br><strong>注意</strong>：国内访问稳定性待优化</p>
+<h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h1><p>立即行动，让你的每一张图片都找到安全可靠的家！</p>
+<blockquote>
+<p><strong>相关资源</strong>：</p>
+<ul>
+<li><a href="https://picgo.github.io/PicGo-Doc/">PicGo官方文档</a></li>
+<li><a href="https://github.com/PicGo/flutter-picgo">flutter-picgo</a>：PicGo 的手机版 App（支持 Android 和 iOS ）</li>
+</ul>
+</blockquote>
+]]></content>
+      <tags>
+        <tag>软件</tag>
+      </tags>
+  </entry>
 </search>
