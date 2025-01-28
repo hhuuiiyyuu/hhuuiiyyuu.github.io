@@ -33,9 +33,12 @@
 <h1 id="PicGo-图片上传-管理新体验"><a href="#PicGo-图片上传-管理新体验" class="headerlink" title="PicGo 图片上传+管理新体验"></a>PicGo 图片上传+管理新体验</h1></li>
 </ul>
 <h2 id="核心优势"><a href="#核心优势" class="headerlink" title="核心优势"></a>核心优势</h2><ul>
-<li>灵活上传，主窗口支持拖拽、选择图片上传；支持读取剪贴板的第一张图片快捷上传。macOS支持顶部栏拖拽上传。</li>
-<li>自动复制链接，上传成功后自动复制链接地址到剪贴板，支持5种复制粘贴格式，让你的文本编辑极致高效。</li>
-<li>支持插件系统，支持JavaScript开发的插件，给予插件极大自由度，让PicGo更加强大，成为你得手的效率工具。</li>
+<li><p>灵活上传，主窗口支持拖拽、选择图片上传；支持读取剪贴板的第一张图片快捷上传。macOS支持顶部栏拖拽上传。</p>
+</li>
+<li><p>自动复制链接，上传成功后自动复制链接地址到剪贴板，支持5种复制粘贴格式，让你的文本编辑极致高效。</p>
+</li>
+<li><p>支持插件系统，支持JavaScript开发的插件，给予插件极大自由度，让PicGo更加强大，成为你得手的效率工具。</p>
+</li>
 </ul>
 <h2 id="推荐自建方案（GitHub-jsDelivr-CDN）"><a href="#推荐自建方案（GitHub-jsDelivr-CDN）" class="headerlink" title="推荐自建方案（GitHub + jsDelivr CDN）"></a>推荐自建方案（GitHub + jsDelivr CDN）</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p>此方案使用Github的仓库，并使用jsDelivr CDN解决Github在国内访问困难的问题。</p>
 <p>并且此方案<strong>完全免费</strong>。</p>
