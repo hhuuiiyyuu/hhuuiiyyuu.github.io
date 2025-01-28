@@ -23,16 +23,12 @@
     <url>/2025/01/28/%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A%E7%BB%88%E6%9E%81%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</url>
     <content><![CDATA[<h1 id="前言：为什么需要自建图床？"><a href="#前言：为什么需要自建图床？" class="headerlink" title="前言：为什么需要自建图床？"></a>前言：为什么需要自建图床？</h1><p>在博客写作中，我们常遇到以下痛点</p>
 <ul>
-<li><p>第三方图床突然关闭（如<a href="https://niupic.com/">牛图网</a>）</p>
-</li>
-<li><p>免费图床存在限制、广告注入风险，甚至会跑路</p>
-</li>
-<li><p>图片管理分散，无法统一维护</p>
-</li>
-<li><p>访问速度不稳定影响阅读体验</p>
-<h1 id="PicGo-图片上传-管理新体验"><a href="#PicGo-图片上传-管理新体验" class="headerlink" title="PicGo 图片上传+管理新体验"></a>PicGo 图片上传+管理新体验</h1></li>
+<li>第三方图床突然关闭（如<a href="https://niupic.com/">牛图网</a>）</li>
+<li>免费图床存在限制、广告注入风险，甚至会跑路</li>
+<li>图片管理分散，无法统一维护</li>
+<li>访问速度不稳定影响阅读体验</li>
 </ul>
-<h2 id="核心优势"><a href="#核心优势" class="headerlink" title="核心优势"></a>核心优势</h2><ul>
+<h1 id="PicGo-图片上传-管理新体验"><a href="#PicGo-图片上传-管理新体验" class="headerlink" title="PicGo 图片上传+管理新体验"></a>PicGo 图片上传+管理新体验</h1><h2 id="核心优势"><a href="#核心优势" class="headerlink" title="核心优势"></a>核心优势</h2><ul>
 <li><p>灵活上传，主窗口支持拖拽、选择图片上传；支持读取剪贴板的第一张图片快捷上传。macOS支持顶部栏拖拽上传。</p>
 </li>
 <li><p>自动复制链接，上传成功后自动复制链接地址到剪贴板，支持5种复制粘贴格式，让你的文本编辑极致高效。</p>
@@ -40,15 +36,15 @@
 <li><p>支持插件系统，支持JavaScript开发的插件，给予插件极大自由度，让PicGo更加强大，成为你得手的效率工具。</p>
 </li>
 </ul>
-<h2 id="推荐自建方案（GitHub-jsDelivr-CDN）"><a href="#推荐自建方案（GitHub-jsDelivr-CDN）" class="headerlink" title="推荐自建方案（GitHub + jsDelivr CDN）"></a>推荐自建方案（GitHub + jsDelivr CDN）</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p>此方案使用Github的仓库，并使用jsDelivr CDN解决Github在国内访问困难的问题。</p>
+<h2 id="推荐自建方案（GitHub-jsDelivr-CDN）"><a href="#推荐自建方案（GitHub-jsDelivr-CDN）" class="headerlink" title="推荐自建方案（GitHub + jsDelivr CDN）"></a>推荐自建方案（GitHub + jsDelivr CDN）</h2><p>此方案使用Github的仓库，并使用jsDelivr CDN解决Github在国内访问困难的问题。</p>
 <p>并且此方案<strong>完全免费</strong>。</p>
-<h3 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h3><h4 id="建立一个仓库"><a href="#建立一个仓库" class="headerlink" title="建立一个仓库"></a>建立一个仓库</h4><p><img src="https://cdn.jsdelivr.net/gh/hhuuiiyyuu/images/Create%20a%20new%20images%20repository.png" alt="新建图床仓库"></p>
+<h3 id="建立一个仓库"><a href="#建立一个仓库" class="headerlink" title="建立一个仓库"></a>建立一个仓库</h3><p><img src="https://cdn.jsdelivr.net/gh/hhuuiiyyuu/images/Create%20a%20new%20images%20repository.png" alt="新建图床仓库"></p>
 <p>Public就可以了</p>
-<h4 id="生成Token"><a href="#生成Token" class="headerlink" title="生成Token"></a>生成Token</h4><p>生成<a href="https://github.com/settings/tokens">GitHub Token</a>（需勾选repo权限）</p>
+<h3 id="生成Token"><a href="#生成Token" class="headerlink" title="生成Token"></a>生成Token</h3><p>生成<a href="https://github.com/settings/tokens">GitHub Token</a>（需勾选repo权限）</p>
 <p><img src="https://cdn.jsdelivr.net/gh/hhuuiiyyuu/images/Github%20token.png" alt="新建Token"></p>
 <p>将token复制</p>
 <p><img src="https://cdn.jsdelivr.net/gh/hhuuiiyyuu/images/A%20token.png" alt="A token"></p>
-<h4 id="下载PicGo并安装"><a href="#下载PicGo并安装" class="headerlink" title="下载PicGo并安装"></a>下载PicGo并安装</h4><blockquote>
+<h3 id="下载PicGo并安装"><a href="#下载PicGo并安装" class="headerlink" title="下载PicGo并安装"></a>下载PicGo并安装</h3><blockquote>
 <h2 id="下载安装（PicGo-is-Here-PicGo）"><a href="#下载安装（PicGo-is-Here-PicGo）" class="headerlink" title="下载安装（PicGo is Here | PicGo）"></a>下载安装（<a href="https://picgo.github.io/PicGo-Doc/zh/guide/#%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85">PicGo is Here | PicGo</a>）</h2><table>
 <thead>
 <tr>
@@ -103,7 +99,7 @@
 </tbody></table>
 </blockquote>
 <p>安装一路确定即可</p>
-<h4 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h4><p><img src="https://cdn.jsdelivr.net/gh/hhuuiiyyuu/images/PicGo%20Github.png" alt="配置"></p>
+<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p><img src="https://cdn.jsdelivr.net/gh/hhuuiiyyuu/images/PicGo%20Github.png" alt="配置"></p>
 <p>上面必填的4个正常填即可</p>
 <p>自定义域名可以这样填</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/你的名字/你的仓库</span><br></pre></td></tr></table></figure>
