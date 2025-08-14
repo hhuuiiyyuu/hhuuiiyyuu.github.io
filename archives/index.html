@@ -63,7 +63,6 @@
 
 
   
-  <script data-pjax async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 
 
@@ -218,15 +217,15 @@
     <header class="post-header">
       <div class="post-meta-container">
         <time itemprop="dateCreated"
-              datetime="2025-08-14T08:13:06+08:00"
-              content="2025-08-14">
-          08-14
+              datetime="2025-08-13T09:42:31+08:00"
+              content="2025-08-13">
+          08-13
         </time>
       </div>
 
       <div class="post-title">
-          <a class="post-title-link" href="/2025/08/14/hello-world/" itemprop="url">
-            <span itemprop="name">Hello World</span>
+          <a class="post-title-link" href="/2025/08/13/%E5%A0%A1%E5%A1%94%E5%A4%9A%E6%9C%BA%E7%AE%A1%E7%90%86/" itemprop="url">
+            <span itemprop="name">堡塔多机管理</span>
           </a>
       </div>
 
@@ -238,15 +237,15 @@
     <header class="post-header">
       <div class="post-meta-container">
         <time itemprop="dateCreated"
-              datetime="2025-08-13T09:42:31+08:00"
-              content="2025-08-13">
-          08-13
+              datetime="2025-08-12T19:42:31+08:00"
+              content="2025-08-12">
+          08-12
         </time>
       </div>
 
       <div class="post-title">
-          <a class="post-title-link" href="/2025/08/13/%E5%A0%A1%E5%A1%94%E5%A4%9A%E6%9C%BA%E7%AE%A1%E7%90%86/" itemprop="url">
-            <span itemprop="name">堡塔多机管理</span>
+          <a class="post-title-link" href="/2025/08/12/hello-world/" itemprop="url">
+            <span itemprop="name">Hello World</span>
           </a>
       </div>
 
@@ -277,24 +276,6 @@
     </span>
     <span class="author" itemprop="copyrightHolder">Wang Huiyu</span>
   </div>
-<div class="busuanzi-count">
-    <span class="post-meta-item" id="busuanzi_container_site_uv">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-user"></i>
-      </span>
-      <span class="site-uv" title="总访客量">
-        <span id="busuanzi_value_site_uv"></span>
-      </span>
-    </span>
-    <span class="post-meta-item" id="busuanzi_container_site_pv">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-eye"></i>
-      </span>
-      <span class="site-pv" title="总访问量">
-        <span id="busuanzi_value_site_pv"></span>
-      </span>
-    </span>
-</div>
   <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
   </div>
 
@@ -316,10 +297,19 @@
 <noscript>
   <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
 </noscript>
-<link rel="stylesheet" href="https://npm.elemecdn.com/gitalk@1.8.0/dist/gitalk.css" integrity="sha256-AJnUHL7dBv6PGaeyPQJcgQPDjt/Hn/PvYZde1iqfp8U=" crossorigin="anonymous">
-
-<script class="next-config" data-name="gitalk" type="application/json">{"enable":true,"github_id":"hhuuiiyyuu","repo":"hhuuiiyyuu.github.io","client_id":"Ov23liha4kM6G0sDLY5L","client_secret":"6a029a3c50295c115cd79af59d921bddf1711a62","admin_user":"hhuuiiyyuu","distraction_free_mode":true,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token","language":null,"js":{"url":"https://npm.elemecdn.com/gitalk@1.8.0/dist/gitalk.min.js","integrity":"sha256-MVK9MGD/XJaGyIghSVrONSnoXoGh3IFxLw0zfvzpxR4="},"path_md5":"b86805e3c045105f4f74c304744b551e"}</script>
-<script src="/js/third-party/comments/gitalk.js" defer></script>
+<script class="next-config" data-name="valine" type="application/json">{"enable":true,"appId":"x8EBzXeF3AN2Qa6QOdmWwxw1-gzGzoHsz","appKey":"t2osjzrtK3zjXdxkn3fL90xm","serverURLs":"https://x8ebzxef.api.lncldglobal.com","placeholder":"Just go go","avatar":"mm","meta":["nick","mail","link"],"pageSize":10,"lang":null,"visitor":false,"comment_count":true,"recordIP":false,"enableQQ":false,"requiredFields":[],"libUrl":"https://registry.npmmirror.com/valine/1.5.3/files/dist/Valine.min.js","el":"#valine-comments","path":"/archives/"}</script>
+<script>
+document.addEventListener('page:loaded', () => {
+  NexT.utils.loadComments(CONFIG.valine.el)
+    .then(() => NexT.utils.getScript(
+      CONFIG.valine.libUrl,
+      { condition: window.Valine }
+    ))
+    .then(() => {
+      new Valine(CONFIG.valine);
+    });
+});
+</script>
 
 </body>
 </html>
